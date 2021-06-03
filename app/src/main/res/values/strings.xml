@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BluetoothControlledCar</string>
+    <string name="bluetoothON">TURN ON</string>
+    <string name="bluetoothOFF">TURN OFF</string>
+    <string name="discoverable">Discoverable</string>
+    <string name="get_paired_devices">Get paired devices</string>
+    <string name="controller">Controller</string>
+    <string name="exit">Exit</string>
+    <string name="devicesTitle">Bluetooth paired devices</string>
+    <string name="optical_sensors_on">Optical sensors ON</string>
+    <string name="optical_sensors_off">Optical sensors OFF</string>
+</resources>

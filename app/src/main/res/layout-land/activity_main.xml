@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        android:textColor="#312">
+
+        <ImageView
+            android:id="@+id/bluetoothImage"
+            android:layout_marginTop="30dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/buttonOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:onClick="powerOnOffBluetooth"/>
+        <Button
+            android:id="@+id/buttonDiscoverable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:onClick="findDiscoverableDevs"
+            android:text="@string/discoverable"/>
+        <Button
+            android:id="@+id/buttonPairedDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:onClick="getPairedDevices"
+            android:text="@string/get_paired_devices"/>
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:onClick="exitApp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonController"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/controller"
+            android:onClick="openController"
+            android:layout_margin="10dp"/>
+        <ListView
+            android:id="@+id/pairedDevList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
